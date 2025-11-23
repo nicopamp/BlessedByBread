@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <title>Blessed by Bread – Handcrafted Sourdough From Our Home to Yours</title>
@@ -8,7 +7,8 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito:wght@300;400;600&display=swap"
-    rel="stylesheet">
+    rel="stylesheet"
+  >
 </head>
 
 <body>
@@ -23,6 +23,7 @@
           <span class="nav-toggle-bar"></span>
           <span class="visually-hidden">Toggle navigation</span>
         </button>
+
         <ul id="nav-menu">
           <li><a href="breads.html">Our Breads</a></li>
           <li><a href="order.html">How to Order</a></li>
@@ -40,6 +41,7 @@
     <!-- Hero -->
     <section class="hero">
       <div class="container hero-grid">
+
         <div class="hero-text">
           <h1>
             The goodness of homemade sourdough bread –
@@ -48,22 +50,35 @@
           </h1>
 
           <div class="hero-actions">
-            <button type="button" id="orderOptionsToggle" class="btn-primary">
+            <button type="button" id="order-for-week-btn" class="btn-primary">
               Order for This Week
             </button>
             <a href="breads.html" class="btn-secondary">View Bread Choices</a>
           </div>
 
-          <div id="orderOptionsPanel" class="order-options" hidden>
-            <button class="order-options-close" aria-label="Close order panel">×</button>
+          <!-- Order Choice Panel -->
+          <div
+            id="order-choice-panel"
+            class="order-choice-panel"
+            aria-hidden="true"
+            hidden
+          >
+            <button
+              class="order-choice-close"
+              id="order-choice-close"
+              aria-label="Close order panel"
+              type="button"
+            >
+              ×
+            </button>
 
             <p>How would you like to place your order?</p>
 
-            <div class="order-options-buttons">
-              <button type="button" class="btn-primary btn-small" data-order-method="email">
+            <div class="order-choice-actions">
+              <button type="button" class="btn-primary btn-small" id="order-email-btn">
                 Email Lise
               </button>
-              <button type="button" class="btn-secondary btn-small" data-order-method="sms">
+              <button type="button" class="btn-secondary btn-small" id="order-text-btn">
                 Text Lise
               </button>
             </div>
@@ -73,14 +88,18 @@
         <div class="hero-image">
           <img src="assets/images/artisan-boule.jpg" alt="Rustic artisan sourdough boule" />
         </div>
+
       </div>
     </section>
 
     <!-- Brand belief -->
     <section class="section">
       <div class="container narrow text-centered brand-belief">
-        <img src="assets/images/loaf-window.jpg" class="section-photo brand-belief-photo"
-          alt="Sliced sourdough loaf on wooden board" />
+        <img
+          src="assets/images/loaf-window.jpg"
+          class="section-photo brand-belief-photo"
+          alt="Sliced sourdough loaf on wooden board"
+        />
         <p>
           At Blessed by Bread, we believe bread should be simple, wholesome,
           and unforgettable. Every loaf is thoughtfully made in small batches,
@@ -110,7 +129,7 @@
       </div>
     </section>
 
-    <!-- Why Sourdough -->
+    <!-- Why Sourdough (unchanged content) -->
     <section class="section alt">
       <div class="container two-column">
         <div class="text-column">
@@ -157,11 +176,12 @@
         <a href="contact.html">Contact</a>
       </div>
 
-      <p class="footer-copy">&copy; <span id="year"></span> Blessed by Bread. All rights reserved.</p>
+      <p class="footer-copy">
+        &copy; <span id="year"></span> Blessed by Bread. All rights reserved.
+      </p>
     </div>
   </footer>
 
   <script src="assets/js/main.js"></script>
 </body>
-
 </html>
