@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Blessed by Bread – Handcrafted Sourdough From Our Home to Yours</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito:wght@300;400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo-bbb.png" alt="Blessed by Bread logo" />
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="visually-hidden">Toggle navigation</span>
+        </button>
+        <ul id="nav-menu">
+          <li><a href="breads.html">Our Breads</a></li>
+          <li><a href="order.html">How to Order</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="about.html">About Lise</a></li>
+          <li><a href="business-info.html">Business Info</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>
+            The goodness of homemade sourdough bread –
+            <br />
+            the crusty kind of comfort!
+          </h1>
+
+          <div class="hero-actions">
+            <button type="button" id="orderOptionsToggle" class="btn-primary">
+              Order for This Week
+            </button>
+            <a href="breads.html" class="btn-secondary">View Bread Choices</a>
+          </div>
+
+          <div id="orderOptionsPanel" class="order-options" hidden>
+            <button class="order-options-close" aria-label="Close order panel">×</button>
+
+            <p>How would you like to place your order?</p>
+
+            <div class="order-options-buttons">
+              <button type="button" class="btn-primary btn-small" data-order-method="email">
+                Email Lise
+              </button>
+              <button type="button" class="btn-secondary btn-small" data-order-method="sms">
+                Text Lise
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="assets/images/artisan-boule.jpg" alt="Rustic artisan sourdough boule" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand belief -->
+    <section class="section">
+      <div class="container narrow text-centered brand-belief">
+        <img src="assets/images/loaf-window.jpg" class="section-photo brand-belief-photo"
+          alt="Sliced sourdough loaf on wooden board" />
+        <p>
+          At Blessed by Bread, we believe bread should be simple, wholesome,
+          and unforgettable. Every loaf is thoughtfully made in small batches,
+          fermented with patience, and baked with love—using only the finest
+          ingredients. No shortcuts, no additives, just real bread the way nature
+          intended. We blend traditional methods with modern precision—
+          fermenting slowly, mixing thoroughly, and baking with a watchful eye.
+          Because great bread isn’t just made; it’s tended to.
+        </p>
+      </div>
+    </section>
+
+    <!-- About Lise -->
+    <section class="section alt">
+      <div class="container two-column">
+        <div class="image-column">
+          <img src="assets/images/lise-kitchen.jpg" alt="Lise in kitchen baking" />
+        </div>
+        <div class="text-column">
+          <h2>Meet Lise</h2>
+          <p>
+            I'm Lise – baker, mom, and grandmother, crafting sourdough loaves with heart from my
+            home kitchen in Leesburg. Every loaf is made with care, patience, and a whole lot of love.
+          </p>
+          <a class="text-link" href="about.html">Read my story →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Sourdough -->
+    <section class="section alt">
+      <div class="container two-column">
+        <div class="text-column">
+          <h2>Why Sourdough Is the Better Choice</h2>
+          <ul class="sourdough-list">
+            <li><strong>Easier to digest</strong> thanks to long fermentation.</li>
+            <li><strong>Lower glycemic impact</strong> for steady energy.</li>
+            <li><strong>No additives</strong>—just flour, water, salt, and time.</li>
+            <li><strong>Deep flavor</strong> developed slowly and naturally.</li>
+          </ul>
+        </div>
+
+        <div class="image-column">
+          <img src="assets/images/lise-stretching-dough.jpg" alt="Lise stretching dough" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA strip -->
+    <section class="section cta-strip">
+      <div class="container cta-strip-inner">
+        <div>
+          <h2>Ready to order?</h2>
+          <p>Order by Wednesday evening for Friday delivery across Loudoun County.</p>
+        </div>
+        <div class="cta-strip-actions">
+          <a href="order.html" class="btn-primary">How to Order</a>
+          <a href="breads.html" class="btn-secondary">See Bread Choices</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">Blessed by Bread</p>
+        <p>Handcrafted loaves from our home to yours – Leesburg, Virginia</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://www.facebook.com/profile.php?id=61578315861291" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/blessedbybreadbakery" target="_blank">Instagram</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <p class="footer-copy">&copy; <span id="year"></span> Blessed by Bread. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

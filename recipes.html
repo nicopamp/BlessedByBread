@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Recipes – Blessed by Bread</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo-bbb.png" alt="Blessed by Bread logo" />
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="visually-hidden">Toggle navigation</span>
+        </button>
+        <ul id="nav-menu">
+          <li><a href="breads.html">Our Breads</a></li>
+          <li><a href="order.html">How to Order</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="recipes.html" class="active">Recipes</a></li>
+          <li><a href="about.html">About Lise</a></li>
+          <li><a href="business-info.html">Business Info</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container narrow text-centered">
+        <h1>Blueberry French Toast</h1>
+
+        <img 
+          src="assets/images/blueberry-french-toast.jpg"
+          alt="Thick slice of French toast topped with blueberries"
+          class="recipe-hero-photo"
+        />
+      </div>
+
+      <div class="container narrow recipe-layout">
+        <div>
+          <h2>Ingredients</h2>
+
+          <p class="recipe-subhead">Sourdough Sandwich Bread (4 slices, 1 inch thick)</p>
+
+          <ul class="ingredients-list">
+            <li>2 eggs</li>
+            <li>½ cup whole milk</li>
+            <li>½ tsp pure vanilla</li>
+            <li>Butter</li>
+            <li>1 cup fresh blueberries</li>
+            <li>Pure maple syrup</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Instructions</h2>
+          <ul class="instructions-list">
+            <li>Whisk together the eggs, milk, and vanilla.</li>
+            <li>Heat a skillet to medium-high and coat with butter.</li>
+            <li>Dip sliced bread into egg mixture, turning to saturate fully.</li>
+            <li>Cook on both sides until golden brown.</li>
+            <li>Top with blueberries and maple syrup.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Blessed by Bread</p>
+      <p class="footer-copy">&copy; <span id="year"></span> Blessed by Bread.</p>
+    </div>
+  </footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
