@@ -183,6 +183,8 @@ h3 {
 
 .section {
   padding: 2.5rem 0;
+  content-visibility: auto;
+  contain-intrinsic-size: 600px 100vw;
 }
 
 .section.alt {
@@ -259,6 +261,31 @@ h3 {
 
 .order-choice-panel p {
   margin: 0 0 0.9rem;
+}
+
+.order-template {
+  text-align: left;
+  background-color: #fff;
+  border: 1px dashed var(--border-soft);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.order-template-label {
+  font-weight: 700;
+  margin: 0 0 0.4rem;
+  font-size: 0.95rem;
+}
+
+.order-template ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.95rem;
+}
+
+.order-template li {
+  margin-bottom: 0.35rem;
 }
 
 .order-choice-close {

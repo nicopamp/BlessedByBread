@@ -3,23 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <title>Blessed by Bread – Handcrafted Sourdough From Our Home to Yours</title>
+  <meta
+    name="description"
+    content="Handcrafted sourdough loaves baked in Leesburg, Virginia. Order artisan boules, focaccia, cinnamon rolls, and more for delivery across Loudoun County."
+  />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="preload"
+    as="image"
+    href="assets/images/artisan-boule.jpg"
+    imagesrcset="assets/images/artisan-boule.jpg 768w"
+    imagesizes="(max-width: 768px) 80vw, 45vw"
+  />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito:wght@300;400;600&display=swap"
     rel="stylesheet"
   >
+  <meta property="og:title" content="Blessed by Bread – Handcrafted Sourdough From Our Home to Yours" />
+  <meta property="og:description" content="Order artisan sourdough loaves baked with patience and delivered across Loudoun County." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://blessedbybread.com/" />
+  <meta property="og:image" content="https://blessedbybread.com/assets/images/artisan-boule.jpg" />
 </head>
 
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="logo">
-        <img src="assets/images/logo-bbb.png" alt="Blessed by Bread logo" />
+        <img
+          src="assets/images/logo-bbb.png"
+          alt="Blessed by Bread logo"
+          width="940"
+          height="788"
+          decoding="async"
+          loading="lazy"
+        />
       </a>
 
       <nav class="main-nav" aria-label="Main navigation">
-        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
           <span class="nav-toggle-bar"></span>
           <span class="visually-hidden">Toggle navigation</span>
         </button>
@@ -71,7 +96,16 @@
               ×
             </button>
 
-            <p>How would you like to place your order?</p>
+            <p>How would you like to place your order? We'll open your email or text app with the template below so you can edit before sending.</p>
+
+            <div class="order-template">
+              <p class="order-template-label">Order template preview:</p>
+              <ul>
+                <li>Your name and preferred delivery date</li>
+                <li>Quantities for each loaf (Artisan, Rosemary, Focaccia, Cinnamon Rolls, Sandwich loaves, Bread of the Month)</li>
+                <li>Any notes or special requests</li>
+              </ul>
+            </div>
 
             <div class="order-choice-actions">
               <button type="button" class="btn-primary btn-small" id="order-email-btn">
@@ -85,7 +119,15 @@
         </div>
 
         <div class="hero-image">
-          <img src="assets/images/artisan-boule.jpg" alt="Rustic artisan sourdough boule" />
+          <img
+            src="assets/images/artisan-boule.jpg"
+            alt="Rustic artisan sourdough boule"
+            width="768"
+            height="1024"
+            decoding="async"
+            fetchpriority="high"
+            data-low-src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='768' height='1024'%3E%3ClinearGradient id='g' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0%' stop-color='%23f6efe8'/%3E%3Cstop offset='100%' stop-color='%23e4d8c7'/%3E%3C/linearGradient%3E%3Crect width='768' height='1024' fill='url(%23g)'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='32' fill='%239c7b54'%3EBlessed by Bread%3C/text%3E%3C/svg%3E"
+          />
         </div>
 
       </div>
@@ -98,6 +140,11 @@
           src="assets/images/loaf-window.jpg"
           class="section-photo brand-belief-photo"
           alt="Sliced sourdough loaf on wooden board"
+          width="3024"
+          height="4032"
+          loading="lazy"
+          decoding="async"
+          data-low-src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='720' height='960'%3E%3Crect width='720' height='960' fill='%23f6efe8'/%3E%3Crect x='72' y='180' width='576' height='600' rx='36' fill='%23d6c4ad'/%3E%3Ctext x='50%25' y='86%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='30' fill='%239c7b54'%3EArtisan bread%3C/text%3E%3C/svg%3E"
         />
         <p>
           At Blessed by Bread, we believe bread should be simple, wholesome,
@@ -115,7 +162,15 @@
     <section class="section alt">
       <div class="container two-column">
         <div class="image-column">
-          <img src="assets/images/lise-kitchen.jpg" alt="Lise in kitchen baking" />
+          <img
+            src="assets/images/lise-kitchen.jpg"
+            alt="Lise in kitchen baking"
+            width="1414"
+            height="986"
+            loading="lazy"
+            decoding="async"
+            data-low-src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='720' height='502'%3E%3Crect width='720' height='502' fill='%23f6efe8'/%3E%3Ccircle cx='190' cy='250' r='90' fill='%23d6c4ad'/%3E%3Crect x='280' y='190' width='260' height='180' rx='40' fill='%23c4b299'/%3E%3Ctext x='50%25' y='90%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='26' fill='%239c7b54'%3EHome baking%3C/text%3E%3C/svg%3E"
+          />
         </div>
         <div class="text-column">
           <h2>Meet Lise</h2>
@@ -142,7 +197,15 @@
         </div>
 
         <div class="image-column">
-          <img src="assets/images/lise-stretching-dough.jpg" alt="Lise stretching dough" />
+          <img
+            src="assets/images/lise-stretching-dough.jpg"
+            alt="Lise stretching dough"
+            width="3448"
+            height="5176"
+            loading="lazy"
+            decoding="async"
+            data-low-src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='720' height='1080'%3E%3Crect width='720' height='1080' fill='%23f6efe8'/%3E%3Crect x='180' y='180' width='360' height='540' rx='60' fill='%23d6c4ad'/%3E%3Ctext x='50%25' y='85%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='28' fill='%239c7b54'%3EDough in motion%3C/text%3E%3C/svg%3E"
+          />
         </div>
       </div>
     </section>
@@ -157,6 +220,7 @@
         <div class="cta-strip-actions">
           <a href="order.html" class="btn-primary">How to Order</a>
           <a href="breads.html" class="btn-secondary">See Bread Choices</a>
+          <a href="tel:17036772366" class="btn-secondary">Call Now</a>
         </div>
       </div>
     </section>
@@ -181,6 +245,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>

@@ -3,7 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <title>About Lise – Blessed by Bread</title>
+  <meta
+    name="description"
+    content="Meet Lise, the home baker crafting small-batch sourdough loaves with care in Leesburg, Virginia."
+  />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -12,11 +18,18 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="logo">
-        <img src="assets/images/logo-bbb.png" alt="Blessed by Bread logo" />
+        <img
+          src="assets/images/logo-bbb.png"
+          alt="Blessed by Bread logo"
+          width="940"
+          height="788"
+          decoding="async"
+          loading="lazy"
+        />
       </a>
 
       <nav class="main-nav" aria-label="Main navigation">
-        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
           <span class="nav-toggle-bar"></span>
           <span class="visually-hidden">Toggle navigation</span>
         </button>
@@ -36,7 +49,15 @@
     <section class="section alt about-page">
       <div class="container two-column about-columns">
         <div class="image-column">
-          <img src="assets/images/lise-kitchen.jpg" alt="Lise in her kitchen preparing bread" />
+          <img
+            src="assets/images/lise-kitchen.jpg"
+            alt="Lise in her kitchen preparing bread"
+            width="1414"
+            height="986"
+            loading="lazy"
+            decoding="async"
+            data-low-src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='720' height='502'%3E%3Crect width='720' height='502' fill='%23f6efe8'/%3E%3Ccircle cx='190' cy='250' r='90' fill='%23d6c4ad'/%3E%3Crect x='280' y='190' width='260' height='180' rx='40' fill='%23c4b299'/%3E%3Ctext x='50%25' y='90%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='26' fill='%239c7b54'%3EHome baking%3C/text%3E%3C/svg%3E"
+          />
         </div>
 
         <div class="text-column">
@@ -70,6 +91,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
