@@ -8,10 +8,16 @@
     content="Business information for Blessed by Bread, including Loudoun County licensing and food liability insurance details."
   />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
   <link rel="stylesheet" href="assets/css/styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  >
 </head>
 
 <body>
@@ -19,19 +25,25 @@
     <div class="container header-inner">
       <a href="index.html" class="logo">
         <img
-          src="assets/images/logo-bbb.png"
+          src="assets/images/logo-bbb-400.png"
           alt="Blessed by Bread logo"
-          width="940"
-          height="788"
+          width="200"
+          height="168"
           decoding="async"
-          loading="lazy"
         />
       </a>
+
       <nav class="main-nav" aria-label="Main navigation">
-        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Toggle navigation menu"
+        >
           <span class="nav-toggle-bar"></span>
           <span class="visually-hidden">Toggle navigation</span>
         </button>
+
         <ul id="nav-menu">
           <li><a href="breads.html">Our Breads</a></li>
           <li><a href="order.html">How to Order</a></li>
@@ -46,33 +58,75 @@
 
   <main>
     <section class="section business-page">
+
+      <!-- Business License -->
       <div class="container narrow text-centered business-block">
         <h1>Business License</h1>
-        <img
-          src="assets/images/business-license.jpg"
-          alt="Lise holding her business license"
-          class="section-photo"
-          width="1124"
-          height="980"
-          loading="lazy"
-          decoding="async"
-          data-low-src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='524'%3E%3Crect width='600' height='524' fill='%23f6efe8'/%3E%3Crect x='70' y='70' width='460' height='384' rx='28' fill='%23d6c4ad'/%3E%3Ctext x='50%25' y='92%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='22' fill='%239c7b54'%3ELicense%3C/text%3E%3C/svg%3E"
-        />
+
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              assets/images/business-license-800.webp 800w,
+              assets/images/business-license-1200.webp 1200w
+            "
+            sizes="(max-width: 768px) 90vw, 60vw"
+          >
+          <source
+            type="image/jpeg"
+            srcset="
+              assets/images/business-license-800.jpg 800w,
+              assets/images/business-license-1200.jpg 1200w
+            "
+            sizes="(max-width: 768px) 90vw, 60vw"
+          >
+          <img
+            src="assets/images/business-license-800.jpg"
+            alt="Lise holding her business license"
+            class="section-photo"
+            width="1124"
+            height="980"
+            loading="lazy"
+            decoding="async"
+            data-low-src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='524'%3E%3Crect width='600' height='524' fill='%23f6efe8'/%3E%3Crect x='70' y='70' width='460' height='384' rx='28' fill='%23d6c4ad'/%3E%3Ctext x='50%25' y='92%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='22' fill='%239c7b54'%3ELicense%3C/text%3E%3C/svg%3E"
+          >
+        </picture>
       </div>
 
+      <!-- Insurance Certificate -->
       <div class="container narrow text-centered business-block">
         <h2>Fully Insured</h2>
-        <img
-          src="assets/images/insurance-certificate.png"
-          alt="Food liability insurance certificate"
-          class="section-photo"
-          width="986"
-          height="424"
-          loading="lazy"
-          decoding="async"
-          data-low-src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='258'%3E%3Crect width='600' height='258' fill='%23f6efe8'/%3E%3Crect x='70' y='52' width='460' height='154' rx='22' fill='%23d6c4ad'/%3E%3Ctext x='50%25' y='88%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='22' fill='%239c7b54'%3EInsurance%3C/text%3E%3C/svg%3E"
-        />
+
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              assets/images/insurance-certificate-800.webp 800w,
+              assets/images/insurance-certificate-1200.webp 1200w
+            "
+            sizes="(max-width: 768px) 90vw, 60vw"
+          >
+          <source
+            type="image/png"
+            srcset="
+              assets/images/insurance-certificate-800.png 800w,
+              assets/images/insurance-certificate-1200.png 1200w
+            "
+            sizes="(max-width: 768px) 90vw, 60vw"
+          >
+          <img
+            src="assets/images/insurance-certificate-800.png"
+            alt="Food liability insurance certificate"
+            class="section-photo"
+            width="986"
+            height="424"
+            loading="lazy"
+            decoding="async"
+            data-low-src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='258'%3E%3Crect width='600' height='258' fill='%23f6efe8'/%3E%3Crect x='70' y='52' width='460' height='154' rx='22' fill='%23d6c4ad'/%3E%3Ctext x='50%25' y='88%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='22' fill='%239c7b54'%3EInsurance%3C/text%3E%3C/svg%3E"
+          >
+        </picture>
       </div>
+
     </section>
   </main>
 

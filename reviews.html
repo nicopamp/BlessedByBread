@@ -8,26 +8,37 @@
     content="See what customers say about Blessed by Bread's handcrafted sourdough loaves and cinnamon rolls."
   />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
   <link rel="stylesheet" href="assets/css/styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  >
 </head>
+
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="logo">
         <img
-          src="assets/images/logo-bbb.png"
+          src="assets/images/logo-bbb-400.png"
           alt="Blessed by Bread logo"
-          width="940"
-          height="788"
+          width="200"
+          height="168"
           decoding="async"
-          loading="lazy"
         />
       </a>
       <nav class="main-nav" aria-label="Main navigation">
-        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Toggle navigation menu"
+        >
           <span class="nav-toggle-bar"></span>
           <span class="visually-hidden">Toggle navigation</span>
         </button>
@@ -46,16 +57,35 @@
   <main>
     <section class="section">
       <div class="container narrow text-centered testimonials-hero">
-        <img
-          src="assets/images/lise-dough.jpg"
-          alt="Lise in her kitchen holding a bowl of dough"
-          class="section-photo"
-          width="1482"
-          height="984"
-          loading="lazy"
-          decoding="async"
-          data-low-src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='720' height='478'%3E%3Crect width='720' height='478' fill='%23f6efe8'/%3E%3Ccircle cx='220' cy='260' r='90' fill='%23d6c4ad'/%3E%3Crect x='300' y='180' width='240' height='160' rx='36' fill='%23c4b299'/%3E%3Ctext x='50%25' y='92%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='24' fill='%239c7b54'%3EDough prep%3C/text%3E%3C/svg%3E"
-        />
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              assets/images/lise-dough-800.webp 800w,
+              assets/images/lise-dough-1200.webp 1200w
+            "
+            sizes="(max-width: 768px) 90vw, 60vw"
+          >
+          <source
+            type="image/jpeg"
+            srcset="
+              assets/images/lise-dough-800.jpg 800w,
+              assets/images/lise-dough-1200.jpg 1200w
+            "
+            sizes="(max-width: 768px) 90vw, 60vw"
+          >
+          <img
+            src="assets/images/lise-dough-800.jpg"
+            alt="Lise in her kitchen holding a bowl of dough"
+            class="section-photo"
+            width="1482"
+            height="984"
+            loading="lazy"
+            decoding="async"
+            data-low-src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='720' height='478'%3E%3Crect width='720' height='478' fill='%23f6efe8'/%3E%3Ccircle cx='220' cy='260' r='90' fill='%23d6c4ad'/%3E%3Crect x='300' y='180' width='240' height='160' rx='36' fill='%23c4b299'/%3E%3Ctext x='50%25' y='92%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='24' fill='%239c7b54'%3EDough prep%3C/text%3E%3C/svg%3E"
+          >
+        </picture>
+
         <h1>Here is what people have been saying...</h1>
       </div>
 
