@@ -57,7 +57,7 @@
           Small-batch, naturally leavened sourdough loaves, each one tended with care in our Leesburg home kitchen.
         </p>
         <div class="bread-grid">
-          <!-- Bread of the Month -->
+          <!-- Bread of the Month (dynamic text via Google Sheets) -->
           <article class="bread-card bread-month">
             <picture>
               <source type="image/webp" srcset="
@@ -78,10 +78,18 @@
                 data-low-src="data:image/svg+xml,%3Csvg ... %3C/svg%3E"
               >
             </picture>
-            <h2>Bread of the Month – Cranberry Chocolate Artisan</h2>
-            <p>This artisan sourdough features rich dark chocolate, sweet-tart cranberries, and a hint of orange zest.</p>
-            <p class="price">$16 <span class="note">December only</span></p>
+            <h2>
+              Bread of the Month – <span data-bom="name">Cranberry Chocolate Artisan</span>
+            </h2>
+            <p data-bom="description">
+              This artisan sourdough features rich dark chocolate, sweet-tart cranberries, and a hint of orange zest.
+            </p>
+            <p class="price">
+              <span data-bom="price">$16</span>
+              <span class="note" data-bom="order_note">December only</span>
+            </p>
           </article>
+
           <!-- Artisan White -->
           <article class="bread-card">
             <picture>
@@ -285,5 +293,6 @@
   </footer>
 
   <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/bread-of-the-month.js" defer></script>
 </body>
 </html>
