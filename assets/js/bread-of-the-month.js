@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Your published Google Sheets CSV URL
   const CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSGr4Pzhf4aAwVjw2yTxJZ0uKjHxH32C_TgxmT5ZhBTmKSLnF_VOYXkElnm8ZdwPhJQmz2Jc3OloTdN/pub?output=csv";
 
-  // Minimal CSV parser that handles quoted fields with commas
   function parseCSV(text) {
     const rows = [];
     let row = [];
@@ -15,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (char === '"') {
         if (inQuotes && next === '"') {
-          // Escaped quote ("")
           cur += '"';
           i++;
         } else {
@@ -53,17 +50,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function setBomImage(url, alt) {
     if (!url || !url.trim()) {
-      // No image URL provided -> keep the default HTML image
-      return;
+      return; // keep default
     }
 
     const img = document.querySelector("[data-bom-image]");
     if (!img) return;
 
-    // Use the provided URL
-    img.src = url.trim();
+    const cleanUrl = url.trim();
 
-    // Remove any srcset/sizes so the browser doesn't override src
+    // Clear picture sources so they don't override us
+    const picture = img.closest("picture");
+    if (picture) {
+      const sources = picture.querySelectorAll("source");
+      sources.forEach(source => {
+        source.removeAttribute("srcset");
+        source.removeAttribute("sizes");
+      });
+    }
+
+    // Set the image src directly
+    img.src = cleanUrl;
     img.removeAttribute("srcset");
     img.removeAttribute("sizes");
 
@@ -94,8 +100,6 @@ document.addEventListener("DOMContentLoaded", function () {
         data[header] = (values[idx] || "").trim();
       });
 
-      // Expected headers:
-      // month, name, description, price, order_note, image_url, image_alt
       setBomField("name", data.name);
       setBomField("description", data.description);
       setBomField("price", data.price);
@@ -106,6 +110,5 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch(function (error) {
       console.warn("[Bread of the Month] Could not update from sheet:", error);
-      // Fallback: static HTML stays visible
     });
 });
