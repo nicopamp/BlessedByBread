@@ -56,9 +56,32 @@
         <p class="intro">
           Small-batch, naturally leavened sourdough loaves, each one tended with care in our Leesburg home kitchen.
         </p>
-
         <div class="bread-grid">
-
+          <!-- Bread of the Month -->
+          <article class="bread-card bread-month">
+            <picture>
+              <source type="image/webp" srcset="
+                assets/images/december-monthly-800.webp 800w,
+                assets/images/december-monthly-1200.webp 1200w
+              " sizes="(max-width: 768px) 90vw, 33vw">
+              <source type="image/jpeg" srcset="
+                assets/images/december-monthly-800.jpg 800w,
+                assets/images/december-monthly-1200.jpg 1200w
+              " sizes="(max-width: 768px) 90vw, 33vw">
+              <img
+                src="assets/images/december-monthly-800.jpg"
+                alt="Cranberry Chocolate Artisan"
+                width="3691"
+                height="2267"
+                loading="lazy"
+                decoding="async"
+                data-low-src="data:image/svg+xml,%3Csvg ... %3C/svg%3E"
+              >
+            </picture>
+            <h2>Bread of the Month – Cranberry Chocolate Artisan</h2>
+            <p>This artisan sourdough features rich dark chocolate, sweet-tart cranberries, and a hint of orange zest.</p>
+            <p class="price">$16 <span class="note">December only</span></p>
+          </article>
           <!-- Artisan White -->
           <article class="bread-card">
             <picture>
@@ -242,33 +265,6 @@
             <p>Tender sourdough rolls swirled with cinnamon, brown sugar, and butter, finished with glaze.</p>
             <p class="price">4 for $14</p>
           </article>
-
-          <!-- Bread of the Month -->
-          <article class="bread-card bread-month">
-            <picture>
-              <source type="image/webp" srcset="
-                assets/images/apple-focaccia-800.webp 800w,
-                assets/images/apple-focaccia-1200.webp 1200w
-              " sizes="(max-width: 768px) 90vw, 33vw">
-              <source type="image/jpeg" srcset="
-                assets/images/apple-focaccia-800.jpg 800w,
-                assets/images/apple-focaccia-1200.jpg 1200w
-              " sizes="(max-width: 768px) 90vw, 33vw">
-              <img
-                src="assets/images/apple-focaccia-800.jpg"
-                alt="Apple Cinnamon focaccia"
-                width="3691"
-                height="2267"
-                loading="lazy"
-                decoding="async"
-                data-low-src="data:image/svg+xml,%3Csvg ... %3C/svg%3E"
-              >
-            </picture>
-            <h2>Bread of the Month – Apple Cinnamon Focaccia</h2>
-            <p>Sweet, warm flavors with apple and autumn spices—perfect for mornings or dessert.</p>
-            <p class="price">$16 <span class="note">November only</span></p>
-          </article>
-
         </div>
       </div>
     </section>
