@@ -70,7 +70,7 @@ Quantity:
 Quantity / Flavor:
 
 👉 Cinnamon Rolls
-Quantity (half dozen / full dozen):
+Quantity (1 box of 4 rolls):
 
 👉 Rosemary Olive Oil Bread
 Quantity:
