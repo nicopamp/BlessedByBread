@@ -51,22 +51,16 @@
     <section class="section">
       <div class="container narrow order-page">
         <h1>Baking Schedule &amp; Ordering</h1>
-        <h2>December Baking Schedule</h2>
+        <h2 id="schedule-month-title">Baking Schedule</h2>
 
-        <div class="order-schedule">
+        <div class="order-schedule" id="baking-schedule" aria-live="polite">
           <p><strong>Delivery Days:</strong></p>
 
-          <ul class="schedule-list">
-            <li>Tuesday, December 3rd</li>
-            <li>Friday, December 5th</li>
-            <li>Tuesday, December 9th</li>
-            <li>Friday, December 12th</li>
-            <li>Tuesday, December 16th</li>
-            <li>Friday, December 19th</li>
-            <li>Tuesday, December 23rd <em>(pick up only)</em></li>
+          <ul class="schedule-list" id="schedule-list">
+            <li>Loading schedule…</li>
           </ul>
 
-          <p><strong>Bakery closed December 24<sup>th</sup> – January 5th</strong></p>
+          <p id="schedule-closure" style="display:none;"></p>
         </div>
         <h2>Weekly Orders</h2>
         <p>
@@ -119,6 +113,7 @@
   </footer>
 
   <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/schedule.js" defer></script>
 </body>
 
 </html>
