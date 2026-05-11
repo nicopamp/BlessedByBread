@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSGr4Pzhf4aAwVjw2yTxJZ0uKjHxH32C_TgxmT5ZhBTmKSLnF_VOYXkElnm8ZdwPhJQmz2Jc3OloTdN/pub?output=csv";
+  const CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSGr4Pzhf4aAwVjw2yTxJZ0uKjHxH32C_TgxmT5ZhBTmKSLnF_VOYXkElnm8ZdwPhJQmz2Jc3OloTdN/pub?gid=0&single=true&output=csv";
 
   function parseCSV(text) {
     const rows = [];
