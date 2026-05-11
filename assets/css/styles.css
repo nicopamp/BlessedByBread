@@ -14,6 +14,8 @@
   --primary: #d1b98a;
   --primary-dark: #b99d68;
   --accent: #a9b59f;
+  --accent-dark: #6f7f65;
+  --accent-border: #c9d2c1;
   --text-main: #4a4a4a;
   --text-strong: #7a5c46;
   --border-soft: #e0d3c2;
@@ -41,6 +43,7 @@ a {
 }
 
 a:hover {
+  color: var(--accent-dark);
   text-decoration: underline;
 }
 
@@ -81,7 +84,7 @@ a:hover {
 
 .site-header {
   background-color: var(--bg-alt);
-  border-bottom: 1px solid var(--border-soft);
+  border-bottom: 1px solid var(--accent-border);
   position: sticky;
   top: 0;
   z-index: 20;
@@ -113,6 +116,15 @@ a:hover {
 .main-nav a {
   font-size: 0.95rem;
   font-weight: 600;
+  padding-bottom: 0.18rem;
+  border-bottom: 2px solid transparent;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: var(--accent-dark);
+  border-bottom-color: var(--accent);
+  text-decoration: none;
 }
 
 .nav-toggle {
@@ -219,7 +231,9 @@ textarea {
 
 .hero {
   padding: 2.5rem 0 1.5rem;
-  background: linear-gradient(to bottom, var(--bg-alt), var(--bg));
+  background:
+    linear-gradient(to bottom, rgba(253, 251, 247, 0.9), rgba(247, 240, 230, 0.96)),
+    linear-gradient(135deg, rgba(169, 181, 159, 0.28), rgba(209, 185, 138, 0.12));
 }
 
 .hero-grid {
@@ -245,10 +259,11 @@ textarea {
 
 .hero-image img {
   width: 100%;
-  max-width: 360px;
+  max-width: 390px;
   margin: 0 auto;
-  border-radius: 26px;
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+  border: 5px solid rgba(253, 251, 247, 0.9);
+  box-shadow: 0 18px 38px rgba(74, 74, 74, 0.16);
 }
 
 /* =========================================
@@ -268,13 +283,17 @@ textarea {
 }
 
 .btn-primary {
-  background-color: var(--primary);
+  background-color: var(--accent-dark);
   color: #fff;
-  border-color: var(--primary);
+  border-color: var(--accent-dark);
+  box-shadow: 0 8px 18px rgba(111, 127, 101, 0.18);
 }
 
 .btn-primary:hover {
-  background-color: var(--primary-dark);
+  background-color: #5f6f56;
+  border-color: #5f6f56;
+  color: #fff;
+  text-decoration: none;
 }
 
 .btn-secondary {
@@ -284,7 +303,9 @@ textarea {
 }
 
 .btn-secondary:hover {
-  background-color: rgba(169, 181, 159, 0.1);
+  background-color: rgba(169, 181, 159, 0.14);
+  color: var(--accent-dark);
+  text-decoration: none;
 }
 
 
@@ -317,6 +338,10 @@ textarea {
   margin-bottom: 0.8rem;
 }
 
+.sourdough-list li::marker {
+  color: var(--accent-dark);
+}
+
 
 /* =========================================
    OUR BREADS PAGE
@@ -331,20 +356,27 @@ textarea {
 
 .bread-card {
   background-color: var(--bg-alt);
-  border-radius: 18px;
+  border-radius: 14px;
   padding: 1.3rem;
   border: 1px solid var(--border-soft);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
   height: 100%;
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.bread-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-soft);
+  box-shadow: 0 16px 34px rgba(74, 74, 74, 0.10);
 }
 
 .bread-card img {
   width: 100%;
   height: 300px;          /* consistent height */
   object-fit: cover;      /* crops gracefully */
-  border-radius: 18px;
+  border-radius: 12px;
   margin-bottom: 0.9rem;
   display: block;
 }
@@ -361,7 +393,7 @@ textarea {
 .price {
   margin-top: auto;
   font-weight: 700;
-  color: var(--text-strong);
+  color: var(--accent-dark);
 }
 
 .price .note {
@@ -422,7 +454,7 @@ textarea {
 
 .testimonial-card {
   background-color: var(--bg-alt);
-  border-radius: 18px;
+  border-radius: 14px;
   padding: 1.25rem 1.4rem;
   border: 1px solid var(--border-soft);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
@@ -432,7 +464,7 @@ textarea {
 .testimonial-name {
   margin-top: 0.75rem;
   font-weight: 600;
-  color: var(--text-strong);
+  color: var(--accent-dark);
 }
 
 /* Reviews page hero spacing */
@@ -560,7 +592,7 @@ textarea {
 
 .contact-card {
   background-color: var(--bg-alt);
-  border-radius: 18px;
+  border-radius: 14px;
   border: 1px solid var(--border-soft);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
   padding: 1.7rem 1.9rem;
@@ -626,12 +658,14 @@ textarea {
 ========================================= */
 
 .cta-strip {
-  background-color: var(--accent);
-  color: #fff;
+  background-color: var(--bg-alt);
+  color: var(--text-main);
+  border-top: 1px solid var(--accent-border);
+  border-bottom: 1px solid var(--accent-border);
 }
 
 .cta-strip h2 {
-  color: #fff;
+  color: var(--text-strong);
 }
 
 .cta-strip-inner {
@@ -642,16 +676,40 @@ textarea {
   flex-wrap: wrap;
 }
 
+.cta-strip .btn-primary {
+  background-color: var(--accent-dark);
+  border-color: var(--accent-dark);
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(111, 127, 101, 0.18);
+}
+
+.cta-strip .btn-primary:hover {
+  background-color: #5f6f56;
+  border-color: #5f6f56;
+  color: #fff;
+}
+
+.cta-strip .btn-secondary {
+  color: var(--text-strong);
+  border-color: var(--accent);
+}
+
+.cta-strip .btn-secondary:hover {
+  background-color: rgba(169, 181, 159, 0.14);
+  color: var(--accent-dark);
+}
+
 
 /* =========================================
    FOOTER
 ========================================= */
 
 .site-footer {
-  background-color: var(--bg-alt);
-  border-top: 1px solid var(--border-soft);
+  background-color: var(--accent);
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
   padding: 1.75rem 0 2.25rem;
   margin-top: 2rem;
+  color: #fff;
 }
 
 .footer-inner {
@@ -661,6 +719,7 @@ textarea {
 .footer-brand {
   font-weight: 700;
   margin-bottom: 0.15rem;
+  color: #fff;
 }
 
 .footer-links {
@@ -672,7 +731,11 @@ textarea {
 
 .footer-copy {
   font-size: 0.85rem;
-  color: #777;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.site-footer a {
+  color: #fff;
 }
 
 
