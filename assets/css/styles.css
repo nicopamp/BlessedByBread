@@ -251,73 +251,6 @@ textarea {
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
 }
 
-/* Home hero: order choice panel */
-
-.order-choice-panel {
-  margin-top: 1rem;
-  padding: 1.1rem 1.6rem 1.5rem;
-  max-width: 420px;
-  border-radius: 18px;
-  background-color: var(--bg-alt);
-  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.10);
-  border: 1px solid var(--border-soft);
-  font-size: 0.98rem;
-  position: relative;
-  text-align: center; /* center text + buttons on desktop */
-}
-
-.order-choice-panel p {
-  margin: 0 0 0.9rem;
-}
-
-.order-template {
-  text-align: left;
-  background-color: #fff;
-  border: 1px dashed var(--border-soft);
-  border-radius: 12px;
-  padding: 0.85rem 1rem;
-  margin-bottom: 1rem;
-}
-
-.order-template-label {
-  font-weight: 700;
-  margin: 0 0 0.4rem;
-  font-size: 0.95rem;
-}
-
-.order-template ul {
-  margin: 0;
-  padding-left: 1.1rem;
-  font-size: 0.95rem;
-}
-
-.order-template li {
-  margin-bottom: 0.35rem;
-}
-
-.order-choice-close {
-  position: absolute;
-  top: 0.55rem;
-  right: 0.7rem;
-  border: none;
-  background: none;
-  font-size: 1.05rem;
-  cursor: pointer;
-  color: var(--text-main);
-}
-
-.order-choice-actions {
-  display: flex;
-  justify-content: center;
-  gap: 0.75rem;
-}
-
-.order-choice-actions .btn-small {
-  padding: 0.55rem 1.4rem;
-  font-size: 0.95rem;
-}
-
-
 /* =========================================
    BUTTONS
 ========================================= */
@@ -864,23 +797,6 @@ button:focus-visible,
   .cta-strip-inner {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  /* ---- Home order choice panel ---- */
-
-  .order-choice-panel {
-    max-width: 100%;
-    margin-top: 1rem;
-    padding: 1.3rem 1.2rem 1.4rem;
-  }
-
-  .order-choice-actions {
-    flex-direction: column;
-  }
-
-  .order-choice-actions .btn-small {
-    width: 100%;
-    justify-content: center;
   }
 
   /* ---- Reviews page ---- */
