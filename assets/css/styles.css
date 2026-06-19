@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/nunito-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../fonts/playfair-display-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
 /* =========================================
    BASE STYLES
 ========================================= */
@@ -706,10 +722,10 @@ textarea {
 
 .site-footer {
   background-color: var(--accent);
-  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  border-top: 1px solid rgba(57, 65, 52, 0.28);
   padding: 1.75rem 0 2.25rem;
   margin-top: 2rem;
-  color: #fff;
+  color: #394134;
 }
 
 .footer-inner {
@@ -719,7 +735,7 @@ textarea {
 .footer-brand {
   font-weight: 700;
   margin-bottom: 0.15rem;
-  color: #fff;
+  color: #394134;
 }
 
 .footer-links {
@@ -731,11 +747,19 @@ textarea {
 
 .footer-copy {
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.86);
+  color: #394134;
 }
 
 .site-footer a {
-  color: #fff;
+  color: #394134;
+}
+
+.site-footer a:hover {
+  color: #2f352c;
+}
+
+.site-footer a:focus-visible {
+  outline-color: #394134;
 }
 
 
@@ -755,6 +779,17 @@ button:focus-visible,
 .nav-toggle:focus-visible .nav-toggle-bar::before,
 .nav-toggle:focus-visible .nav-toggle-bar::after {
   background-color: var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 

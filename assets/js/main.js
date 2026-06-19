@@ -30,21 +30,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* -----------------------------
-     Data Saver placeholders
-  ----------------------------- */
-  const connection =
-    navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-
-  if (connection && connection.saveData) {
-    document.querySelectorAll("img[data-low-src]").forEach((img) => {
-      const lowSrc = img.getAttribute("data-low-src");
-      if (!lowSrc) return;
-
-      img.dataset.fullSrc = img.src;
-      img.src = lowSrc;
-      img.removeAttribute("srcset");
-    });
-  }
-
 });
